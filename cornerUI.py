@@ -65,7 +65,7 @@ image = Image.open(logo_path)
 def run_ui():
     print("Program running................")
     start_monitoring()
-    icon = pystray.Icon("QuickCorners", image, menu=pystray.Menu(
+    icon = pystray.Icon("QuickCorners", image,title="QuickCorners", menu=pystray.Menu(
         pystray.MenuItem("Start", on_clicked),
         pystray.MenuItem("Stop", on_clicked),
         pystray.MenuItem("Exit", on_clicked)
