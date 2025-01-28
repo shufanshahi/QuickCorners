@@ -8,7 +8,7 @@ HotCorner for Windows OS
 ### Clone the repository
 To clone the repository type this command by opening a terminal in the destination folder
 ```
-https://github.com/shufanshahi/QuickCorners.git
+git clone https://github.com/shufanshahi/QuickCorners.git
 ```
 This will create a folder `QuickCorners` in that directory. 
 ### Download packages
