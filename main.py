@@ -1,4 +1,4 @@
-from corner import run_ui
+from cornerUI import run_ui
 
 
 if __name__  == "__main__":
