@@ -48,18 +48,23 @@ def on_clicked(icon, item):
 def run_monitor():
     monitor_cursor(stop_flag)
 
+
+
 def resource_path(relative_path):
-    """ Get the absolute path to a resource bundled with the app. """
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
+
+
 
 logo_path = resource_path("images/logo.png")
 image = Image.open(logo_path)
 
 
+
 def run_ui():
     print("Program running................")
+    start_monitoring()
     icon = pystray.Icon("QuickCorners", image, menu=pystray.Menu(
         pystray.MenuItem("Start", on_clicked),
         pystray.MenuItem("Stop", on_clicked),
